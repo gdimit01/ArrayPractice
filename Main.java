@@ -10,8 +10,9 @@ class Main {
         int sum = 0;
         for (int i = 0; i <=numDays; i++) {
             System.out.println("Day " + i + "'s high temp:");
-            int next = scanner.nextInt();
-            sum += next;
+            //each time user enters temp, it is saved into the temp[i] array
+            temps[i] = scanner.nextInt();
+            sum += temps[i];
         }
         double average = sum / numDays;
         System.out.println();
